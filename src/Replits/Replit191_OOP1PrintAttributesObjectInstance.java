@@ -17,14 +17,14 @@ public class Replit191_OOP1PrintAttributesObjectInstance
 	}
 
 	static class Atts
-		{
-			String name;
-			String color;
-			int amount;
+	{
+		String name;
+		String color;
+		int amount;
 
-			public String asString()
-			{
-				return "name: " + name + " color: " + color + " amount: " + amount;
-			}
+		public String asString()
+		{
+			return "name: " + name + " color: " + color + " amount: " + amount;
 		}
+	}
 	}
