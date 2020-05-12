@@ -33,9 +33,9 @@ public class ArrayList_appendPosSum   //Created at: 8:17 PM - May, 11, 2020
 		ArrayList<Integer> pos = new ArrayList<Integer>();
 		int temp;
 		int count = 0;
-		for(int i = 0; i<aList.size();i++)
+		for(Integer integer : aList)
 		{
-			temp = aList.get(i);
+			temp=integer;
 			if(temp>0)
 			{
 				pos.add(temp);
