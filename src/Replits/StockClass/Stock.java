@@ -23,11 +23,6 @@ public class Stock   //Created at: 4:50 PM - May, 18, 2020
 			marketCap = totalShares * price;
 		}
 	
-	public long marketCap()
-		{
-			return marketCap = totalShares * price;
-		}
-	
 	// DO NOT CHANGE THE METHOD BELOW
 	public void adjustPrice(int value)
 		{
@@ -45,7 +40,7 @@ public class Stock   //Created at: 4:50 PM - May, 18, 2020
 			return "Ticker Symbol: " + tickerSymbol +
 			       "\nCompany: " + companyName +
 			       "\nCurrent Price: $" + price + " (" + temp + "%)" +
-			       "\nMarket Cap: $" + marketCap();
+			       "\nMarket Cap: $" + marketCap;
 		}
 	
 	public String symbol()
