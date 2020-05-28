@@ -3,7 +3,7 @@ package Replits;
 import java.util.Scanner;
 
 public class Replit51_TipCalculator
-    {
+{
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
@@ -24,23 +24,23 @@ public class Replit51_TipCalculator
         double TipPerPerson;
         double TipRate = 0;
 
-        if (ServiceQuality.equals("Poor"))
+        if(ServiceQuality.equals("Poor"))
         {
             TipRate = 5;
         }
-        else if (ServiceQuality.equals("Fair"))
+        else if(ServiceQuality.equals("Fair"))
         {
             TipRate = 10;
         }
-        else if (ServiceQuality.equals("Good"))
+        else if(ServiceQuality.equals("Good"))
         {
             TipRate = 15;
         }
-        else if (ServiceQuality.equals("Great"))
+        else if(ServiceQuality.equals("Great"))
         {
             TipRate = 20;
         }
-        else if (ServiceQuality.equals("Excellent"))
+        else if(ServiceQuality.equals("Excellent"))
         {
             TipRate = 25;
         }
@@ -49,7 +49,7 @@ public class Replit51_TipCalculator
             System.out.println("Error");
         }
 
-        switch (Split)
+        switch(Split)
         {
             case "Yes":
                 TotalTip = (Check / 100) * TipRate; //25
@@ -58,7 +58,7 @@ public class Replit51_TipCalculator
                 TotalPerPerson = TotalPay / NumberOfPeople; //105
 
                 System.out.print("Number of people entered: ");
-                for (int i = 0; i < NumberOfPeople; i++)
+                for(int i = 0; i < NumberOfPeople; i++)
                 {
                     System.out.print("&"); //0 1 2 3 4
                 }
@@ -81,4 +81,4 @@ public class Replit51_TipCalculator
 
 
     }
-    }
+}

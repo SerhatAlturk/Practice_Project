@@ -24,92 +24,92 @@ Total Price: 18.0
  */
 public class Pizza   //Created at: 8:29 PM - May, 14, 2020
 {
-	private String PizzaSize;
-	int CheeseToppings, PepperToppings, HamToppings;
+    int CheeseToppings, PepperToppings, HamToppings;
+    private String PizzaSize;
 
-	public Pizza(String PizzaSize, int CheeseToppings, int PepperToppings, int HamToppings)
-	{
-		this.PizzaSize=PizzaSize;
-		this.CheeseToppings=CheeseToppings;
-		this.HamToppings=HamToppings;
-		this.PepperToppings=PepperToppings;
-	}
+    public Pizza(String PizzaSize, int CheeseToppings, int PepperToppings, int HamToppings)
+    {
+        this.PizzaSize = PizzaSize;
+        this.CheeseToppings = CheeseToppings;
+        this.HamToppings = HamToppings;
+        this.PepperToppings = PepperToppings;
+    }
 
-	public String getPizzaSize()
-	{
-		return PizzaSize;
-	}
+    public String getPizzaSize()
+    {
+        return PizzaSize;
+    }
 
-	public void setPizzaSize(String pizzaSize)
-	{
-		PizzaSize=pizzaSize;
-	}
+    public void setPizzaSize(String pizzaSize)
+    {
+        PizzaSize = pizzaSize;
+    }
 
-	public int getCheeseToppings()
-	{
-		return CheeseToppings;
-	}
+    public int getCheeseToppings()
+    {
+        return CheeseToppings;
+    }
 
-	public void setCheeseToppings(int cheeseToppings)
-	{
-		CheeseToppings=cheeseToppings;
-	}
+    public void setCheeseToppings(int cheeseToppings)
+    {
+        CheeseToppings = cheeseToppings;
+    }
 
-	public int getPepperToppings()
-	{
-		return PepperToppings;
-	}
+    public int getPepperToppings()
+    {
+        return PepperToppings;
+    }
 
-	public void setPepperToppings(int pepperToppings)
-	{
-		PepperToppings=pepperToppings;
-	}
+    public void setPepperToppings(int pepperToppings)
+    {
+        PepperToppings = pepperToppings;
+    }
 
-	public int getHamToppings()
-	{
-		return HamToppings;
-	}
+    public int getHamToppings()
+    {
+        return HamToppings;
+    }
 
-	public void setHamToppings(int hamToppings)
-	{
-		HamToppings=hamToppings;
-	}
+    public void setHamToppings(int hamToppings)
+    {
+        HamToppings = hamToppings;
+    }
 
-	public double calcCost()
-	{
-		double cost=0;
-		if(PizzaSize.equalsIgnoreCase("small"))
-		{
-			cost=10+(CheeseToppings*2)+(PepperToppings*2)+(HamToppings*2);
-		}
-		if(PizzaSize.equalsIgnoreCase("medium"))
-		{
-			cost=12+(CheeseToppings*2)+(PepperToppings*2)+(HamToppings*2);
-		}
-		if(PizzaSize.equalsIgnoreCase("large"))
-		{
-			cost=14+(CheeseToppings*2)+(PepperToppings*2)+(HamToppings*2);
-		}
-		return cost;
-	}
+    public double calcCost()
+    {
+        double cost = 0;
+        if(PizzaSize.equalsIgnoreCase("small"))
+        {
+            cost = 10 + (CheeseToppings * 2) + (PepperToppings * 2) + (HamToppings * 2);
+        }
+        if(PizzaSize.equalsIgnoreCase("medium"))
+        {
+            cost = 12 + (CheeseToppings * 2) + (PepperToppings * 2) + (HamToppings * 2);
+        }
+        if(PizzaSize.equalsIgnoreCase("large"))
+        {
+            cost = 14 + (CheeseToppings * 2) + (PepperToppings * 2) + (HamToppings * 2);
+        }
+        return cost;
+    }
 
-	public String getDescription()
-	{
+    public String getDescription()
+    {
 		/*
 		getDescription() example:
 		large Pizza with 0 Cheese toppings, 0 Pepperoni toppings, and 2 Ham toppings.
 		Total Price: 18.0
 		 */
-		return PizzaSize+" Pizza with "+CheeseToppings+" Cheese toppings, "+PepperToppings+" Pepperoni toppings, and "+HamToppings+" Ham toppings.\n" +
-		       "Total Price: "+calcCost();
-	}
+        return PizzaSize + " Pizza with " + CheeseToppings + " Cheese toppings, " + PepperToppings + " Pepperoni toppings, and " + HamToppings + " Ham toppings.\n" +
+               "Total Price: " + calcCost();
+    }
 }
 
 class Main
 {
-	public static void main(String[] args)
-	{
-		Pizza pizza1 = new Pizza("Small",2,2,2);
-		System.out.println(pizza1.getDescription());
-	}
+    public static void main(String[] args)
+    {
+        Pizza pizza1 = new Pizza("Small", 2, 2, 2);
+        System.out.println(pizza1.getDescription());
+    }
 }

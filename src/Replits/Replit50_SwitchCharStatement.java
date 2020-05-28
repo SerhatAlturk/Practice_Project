@@ -3,14 +3,14 @@ package Replits;
 import java.util.Scanner;
 
 public class Replit50_SwitchCharStatement
-    {
+{
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter command:");
         char response = scanner.next().charAt(0);
 
-        switch (response)
+        switch(response)
         {
             case 'y':
                 System.out.println("Your request is being processed");
@@ -25,4 +25,4 @@ public class Replit50_SwitchCharStatement
                 System.out.println("Invalid entry, please try again!");
         }
     }
-    }
+}

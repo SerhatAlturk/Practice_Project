@@ -1,7 +1,5 @@
 package Tasks;
 
-import java.util.*;
-
 /*
 1. create a custom class for pizza that should contain the following:
                 instance variables:
@@ -24,9 +22,9 @@ import java.util.*;
  */
 public class Tasks   //Created at: 11:52 PM - May, 11, 2020
 {
-	public class pizza
-	{
-		String size;
-		int toppings;
-	}
+    public class pizza
+    {
+        String size;
+        int toppings;
+    }
 }

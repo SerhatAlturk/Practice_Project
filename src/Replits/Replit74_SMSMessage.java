@@ -3,22 +3,22 @@ package Replits;
 import java.util.Scanner;
 
 public class Replit74_SMSMessage
-	{
-	public static void main(String[] args)
-	{
-		Scanner scanner = new Scanner(System.in);
-		String message = scanner.nextLine();
-		String sender;
-		String phoneNumber;
-		String messageBody;
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        String message = scanner.nextLine();
+        String sender;
+        String phoneNumber;
+        String messageBody;
 
-		sender = message.substring(message.indexOf("<") + 1, message.indexOf(">"));
-		phoneNumber = message.substring(message.indexOf("[") + 1, message.indexOf("]"));
-		messageBody = message.substring(message.indexOf("{") + 1, message.indexOf("}"));
+        sender = message.substring(message.indexOf("<") + 1, message.indexOf(">"));
+        phoneNumber = message.substring(message.indexOf("[") + 1, message.indexOf("]"));
+        messageBody = message.substring(message.indexOf("{") + 1, message.indexOf("}"));
 
-		System.out.println("Sender: " + sender);
-		System.out.println("Phone Number: " + phoneNumber);
-		System.out.println("Message body: " + messageBody);
+        System.out.println("Sender: " + sender);
+        System.out.println("Phone Number: " + phoneNumber);
+        System.out.println("Message body: " + messageBody);
 
 			/*
 			Instructions from your teacher:
@@ -37,5 +37,5 @@ public class Replit74_SMSMessage
 			Phone Number: 202-123-3456
 			Message body: I love programing and problem solving
 			 */
-	}
-	}
+    }
+}

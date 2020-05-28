@@ -1,0 +1,62 @@
+package Replits.TJMaxx;
+
+/**
+ * SubClass of Item
+ */
+public class OnSaleItem extends Item
+{
+    /**
+     * private instance variable, used for discount percentage
+     */
+    private double discount;
+
+    /**
+     * public constructor for OnSaleItem
+     *
+     * @param name
+     * @param quantity
+     * @param catalogNumber
+     * @param price
+     * @param discount      - Calls Super class constructor by passing name,quantity,catalogNumber,price
+     *                      - it will assign the price after deducting(minus) discount from the price
+     *                      - assigns discount
+     */
+    public OnSaleItem(String name, int quantity, int catalogNumber, double price, double discount) //Done
+    {
+        super(name, quantity, catalogNumber, price - price * (discount / 100));
+        this.discount = discount;
+    }
+
+    /**
+     * getter for discount
+     *
+     * @return
+     */
+    public double getDiscount() //Done
+    {
+        //TODO
+        return discount;
+    }
+
+    /**
+     * setter for discount
+     *
+     * @param discount
+     */
+    public void setDiscount(double discount) //Done
+    {
+        this.discount = discount;
+    }
+
+    /**
+     * overrides toString from Item:
+     *
+     * @returns Object description in this format:
+     * * "OnSaleItem{discount=20.0%, name=ItemName, price=100.45}"
+     */
+    @Override
+    public String toString() //Done
+    {
+        return "OnSaleItem{discount="+discount+"%, name="+getName()+", price="+getPrice()+"}";
+    }
+}

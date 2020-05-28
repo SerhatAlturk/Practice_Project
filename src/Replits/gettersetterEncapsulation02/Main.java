@@ -5,7 +5,7 @@ public class Main   //Created at: 11:24 PM - May, 18, 2020
     public static void main(String[] args)
     {
 
-        Db db=new Db();
+        Db db = new Db();
         db.insertData("aaa", 123);
 
 

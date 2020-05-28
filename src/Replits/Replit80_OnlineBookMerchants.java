@@ -3,38 +3,38 @@ package Replits;
 import java.util.Scanner;
 
 public class Replit80_OnlineBookMerchants
-	{
-	public static void main(String[] args)
-	{
-		int freeBooks = 0;
-		Scanner scan = new Scanner(System.in);
-		boolean isPremiumCustomer = scan.nextBoolean();
-		int nbooksPurchased = scan.nextInt();
+{
+    public static void main(String[] args)
+    {
+        int freeBooks = 0;
+        Scanner scan = new Scanner(System.in);
+        boolean isPremiumCustomer = scan.nextBoolean();
+        int nbooksPurchased = scan.nextInt();
 
-		if (isPremiumCustomer == true)
-		{
-			if (nbooksPurchased >= 5)
-			{
-				freeBooks += 1;
-			}
-			if (nbooksPurchased >= 8)
-			{
-				freeBooks = 2;
-			}
-		}
-		if (isPremiumCustomer == false)
-		{
-			if (nbooksPurchased >= 7)
-			{
-				freeBooks += 1;
-			}
-			if (nbooksPurchased >= 12)
-			{
-				freeBooks = 2;
-			}
-		}
+        if(isPremiumCustomer == true)
+        {
+            if(nbooksPurchased >= 5)
+            {
+                freeBooks += 1;
+            }
+            if(nbooksPurchased >= 8)
+            {
+                freeBooks = 2;
+            }
+        }
+        if(isPremiumCustomer == false)
+        {
+            if(nbooksPurchased >= 7)
+            {
+                freeBooks += 1;
+            }
+            if(nbooksPurchased >= 12)
+            {
+                freeBooks = 2;
+            }
+        }
 
-		System.out.println(freeBooks);
+        System.out.println(freeBooks);
 
 			/*
 			  Online Book Merchants offers
@@ -48,5 +48,5 @@ public class Replit80_OnlineBookMerchants
             the values of the boolean variable isPremiumCustomer and the int variable nbooksPurchased.
             Print amount of freeBooks into the console.
 			*/
-	}
-	}
+    }
+}

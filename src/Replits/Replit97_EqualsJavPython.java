@@ -3,28 +3,28 @@ package Replits;
 import java.util.Scanner;
 
 public class Replit97_EqualsJavPython
-	{
-	public static void main(String[] args)
-	{
-		Scanner scan = new Scanner(System.in);
-		String sentence = scan.nextLine();
+{
+    public static void main(String[] args)
+    {
+        Scanner scan = new Scanner(System.in);
+        String sentence = scan.nextLine();
 
-		int a, b;
+        int a, b;
 
-		int countjava = sentence.length() - sentence.replaceAll("java", "").length();
-		countjava /= 4;
+        int countjava = sentence.length() - sentence.replaceAll("java", "").length();
+        countjava /= 4;
 
-		int countpython = sentence.length() - sentence.replaceAll("python", "").length();
-		countpython /= 6;
+        int countpython = sentence.length() - sentence.replaceAll("python", "").length();
+        countpython /= 6;
 
-		if (countjava == countpython)
-		{
-			System.out.println("true");
-		}
-		else
-		{
-			System.out.println("false");
-		}
+        if(countjava == countpython)
+        {
+            System.out.println("true");
+        }
+        else
+        {
+            System.out.println("false");
+        }
 
 
 
@@ -48,5 +48,5 @@ public class Replit97_EqualsJavPython
 			input: What's the difference between java, javascript and python?
 			output: false
 			 */
-	}
-	}
+    }
+}

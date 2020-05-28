@@ -7,6 +7,7 @@ public class Main
 
     }
 }
+
 class ParkingMeter
 {
     int timeLeft = 0;
@@ -14,14 +15,14 @@ class ParkingMeter
 
     public ParkingMeter(int maxTime)
     {
-        this.maxTime=maxTime;
+        this.maxTime = maxTime;
     }
 
     public boolean add(int var)
     {
-        if(var==25&&timeLeft+30<=maxTime)
+        if(var == 25 && timeLeft + 30 <= maxTime)
         {
-            timeLeft+=30;
+            timeLeft += 30;
             return true;
         }
         else return false;
@@ -29,7 +30,7 @@ class ParkingMeter
 
     public void tick()
     {
-        if(timeLeft>0)
+        if(timeLeft > 0)
         {
             timeLeft--;
         }
@@ -37,7 +38,7 @@ class ParkingMeter
 
     public boolean isExpired()
     {
-        if(timeLeft==0)
+        if(timeLeft == 0)
         {
             return true;
         }

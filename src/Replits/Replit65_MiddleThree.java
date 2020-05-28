@@ -3,13 +3,13 @@ package Replits;
 import java.util.Scanner;
 
 public class Replit65_MiddleThree
-    {
+{
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
         String word = scanner.nextLine();
 
-        if (word.length() % 2 != 0 && word.length() >= 5)
+        if(word.length() % 2 != 0 && word.length() >= 5)
         {
             int a = word.length() / 2;
             int b = word.length() / 2 - 1;
@@ -26,4 +26,4 @@ public class Replit65_MiddleThree
             System.out.println("invalid");
         }
     }
-    }
+}

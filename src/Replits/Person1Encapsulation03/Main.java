@@ -15,7 +15,7 @@ public class Main
         person.setLastName("Doe");
         person.setAge(44);
 
-        System.out.println(person.toString() ); // "John | Doe | 44"
+        System.out.println(person.toString()); // "John | Doe | 44"
 
         Person person2 = new Person("Fatima", "Lee", 22);
 
@@ -33,15 +33,16 @@ class Person
 
     public Person()
     {
-        firstName="undefined";
-        lastName="undefined";
-        age=-1;
+        firstName = "undefined";
+        lastName = "undefined";
+        age = -1;
     }
+
     public Person(String firstName, String lastName, int age)
     {
-        this.firstName=firstName;
-        this.lastName=lastName;
-        this.age=age;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
     }
 
     public String getFirstName()
@@ -51,7 +52,7 @@ class Person
 
     public void setFirstName(String firstName)
     {
-        this.firstName=firstName;
+        this.firstName = firstName;
     }
 
     public String getLastName()
@@ -61,7 +62,7 @@ class Person
 
     public void setLastName(String lastName)
     {
-        this.lastName=lastName;
+        this.lastName = lastName;
     }
 
     public int getAge()
@@ -71,11 +72,11 @@ class Person
 
     public void setAge(int age)
     {
-        this.age=age;
+        this.age = age;
     }
 
     public String toString()
     {
-        return firstName+" | "+lastName+" | "+age;
+        return firstName + " | " + lastName + " | " + age;
     }
 }

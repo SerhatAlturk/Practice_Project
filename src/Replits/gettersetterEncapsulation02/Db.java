@@ -7,8 +7,8 @@ public class Db   //Created at: 11:24 PM - May, 18, 2020
 
     public void insertData(String data, int yint)
     {
-        this.data=data;
-        this.yint=yint;
+        this.data = data;
+        this.yint = yint;
     }
 
     public String getData()
@@ -16,19 +16,18 @@ public class Db   //Created at: 11:24 PM - May, 18, 2020
         return data;
     }
 
+    public void setData(String data)
+    {
+        this.data = data;
+    }
+
     public int getYint()
     {
         return yint;
     }
 
-    public void setData(String data)
-    {
-        this.data=data;
-    }
-
-
     public void setYint(int yint)
     {
-        this.yint=yint;
+        this.yint = yint;
     }
 }

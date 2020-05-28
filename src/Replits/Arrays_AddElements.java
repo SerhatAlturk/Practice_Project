@@ -1,6 +1,7 @@
 package Replits;
 
-import java.util.*;
+import java.util.Arrays;
+
 /*
 Method addElements accepts 2 int arrays and adds each element value of two arrays and returns a new array. You can assume that each array has 5 elements
 
@@ -13,22 +14,22 @@ return array after adding values in the arrays:
  */
 public class Arrays_AddElements   //Created at: 8:10 PM - May, 11, 2020
 {
-	public static int[] addElements(int[] ints1, int[] ints2)
-	{
-		int[] lastArr = new int[5];
+    public static int[] addElements(int[] ints1, int[] ints2)
+    {
+        int[] lastArr = new int[5];
 
-		for(int i=0; i<5; i++)
-		{
-			lastArr[i]= ints1[i]+ints2[i];
-		}
-		return lastArr;
-	}
+        for(int i = 0; i < 5; i++)
+        {
+            lastArr[i] = ints1[i] + ints2[i];
+        }
+        return lastArr;
+    }
 
-	public static void main(String[] args)
-	{
-		int[] arr1 = {1,2,3,4,5};
-		int[] arr2 = {1,2,3,4,5};
+    public static void main(String[] args)
+    {
+        int[] arr1 = {1, 2, 3, 4, 5};
+        int[] arr2 = {1, 2, 3, 4, 5};
 
-		System.out.println(Arrays.toString(addElements(arr1, arr2)));
-	}
+        System.out.println(Arrays.toString(addElements(arr1, arr2)));
+    }
 }

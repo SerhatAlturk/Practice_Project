@@ -19,7 +19,7 @@ Top-Level Domain: com
  */
 
 public class Replit73_Email2
-    {
+{
     public static void main(String[] args)
     {
         Scanner scan = new Scanner(System.in);
@@ -42,4 +42,4 @@ public class Replit73_Email2
         System.out.println("Top-Level Domain: " + TPDomain);
 
     }
-    }
+}
