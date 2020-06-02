@@ -1,16 +1,10 @@
-package Tasks.Abstraction;
+package Tasks.Abstraction.Task01;
 
-public class Tiger extends Pets
+public class Dog extends Pets
 {
-    public Tiger(String name, String color, String breed, byte age, char gender)
+    public Dog(String name, String color, String breed, int age, char gender)
     {
         super(name, color, breed, age, gender);
-    }
-
-    @Override
-    public void speak()
-    {
-        System.out.println(name + " is roaring and growling.");
     }
 
     @Override
@@ -24,5 +18,10 @@ public class Tiger extends Pets
     {
         System.out.println(name + " is eating.");
     }
-}
 
+    @Override
+    public void speak()
+    {
+        System.out.println(name + " is barking.");
+    }
+}

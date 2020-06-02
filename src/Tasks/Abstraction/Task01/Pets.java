@@ -1,12 +1,12 @@
-package Tasks.Abstraction;
+package Tasks.Abstraction.Task01;
 
 public abstract class Pets
 {
     public String name, color, breed;
-    public byte age;
+    public int age;
     public char gender;
 
-    public Pets(String name, String color, String breed, byte age, char gender)
+    public Pets(String name, String color, String breed, int age, char gender)
     {
         this.name = name;
         this.color = color;
